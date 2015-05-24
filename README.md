@@ -1,0 +1,2 @@
+# Custom-Inline-Helper-Methods-in-ASP.NET-MVC
+Helpers are package of few lines of code or a markup which can be reused throughout an MVC application.Using Razor @helper syntax we can encapsulate code (combination of Razor code and Html markup) in razor view which we can reuse across all the views in our application. So even if we need to change the code we just have to change at one place. This makes the code more readable and maintainable
