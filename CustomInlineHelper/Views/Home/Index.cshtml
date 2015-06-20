@@ -3,6 +3,7 @@
 }
 
 
+<!--Custom Inline Helper Method-->
 <div class="row">
     <div class="col-md-6">
         <h2>Fruits</h2>
@@ -11,5 +12,18 @@
     <div class="col-md-6">
         <h2>Flowers</h2>
         @GlobalHelper.ListItems(ViewBag.Flowers)
+    </div>
+</div>
+
+<!--Adde the namespace for the class containing the helper method in Views/web.config file-->
+<!--Custom External Helper Method-->
+<div class="row">
+    <div class="col-md-6">
+        <h2>Fruits</h2>
+        @Html.ListItems((string[])ViewBag.Fruits)
+    </div>
+    <div class="col-md-6">
+        <h2>Flowers</h2>
+        @Html.ListItems((string[])ViewBag.Flowers)
     </div>
 </div>
